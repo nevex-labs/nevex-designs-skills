@@ -1,0 +1,2 @@
+bash scripts/validate-skills.sh
+pnpm exec lint-staged

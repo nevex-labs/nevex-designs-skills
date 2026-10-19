@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
+    "oxfmt": "^0.73.0"
+  },
+  "name": "nevex-designs-skills",
+  "private": true,
+  "scripts": {
+    "prepare": "husky",
+    "validate:skills": "bash scripts/validate-skills.sh"
+  },
+  "version": "0.1.0",
+  "packageManager": "pnpm@10.24.0"
+}
