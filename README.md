@@ -23,16 +23,16 @@ Estructura compatible con el estándar Agent Skills y el CLI `skills`
 
 ```bash
 # Desde el repo publicado (reemplazá org/repo por el real)
-pnpm dlx skills add <org>/nevex-designs-skills --skill 'diseno*'
+pnpm dlx skills add nevex-labs/nevex-designs-skills --skill 'diseno*'
 
 # Solo una skill
-pnpm dlx skills add <org>/nevex-designs-skills --skill diseno-revision
+pnpm dlx skills add nevex-labs/nevex-designs-skills --skill diseno-revision
 
 # Global (todas tus máquinas) en vez de proyecto
-pnpm dlx skills add <org>/nevex-designs-skills --skill 'diseno*' -g
+pnpm dlx skills add nevex-labs/nevex-designs-skills --skill 'diseno*' -g
 
 # Solo listar sin instalar
-pnpm dlx skills add <org>/nevex-designs-skills --list
+pnpm dlx skills add nevex-labs/nevex-designs-skills --list
 
 # Desde checkout local
 pnpm dlx skills add ./nevex-designs-skills --skill 'diseno*'
