@@ -2,6 +2,7 @@ name: validate
 
 on:
   push:
+    branches: [main]
   pull_request:
 
 # Un push nuevo a un PR cancela la corrida anterior; en la rama principal nunca.
@@ -12,6 +13,7 @@ concurrency:
 jobs:
   skills:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
