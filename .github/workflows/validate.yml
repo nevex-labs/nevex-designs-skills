@@ -4,6 +4,11 @@ on:
   push:
   pull_request:
 
+# Un push nuevo a un PR cancela la corrida anterior; en la rama principal nunca.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
 jobs:
   skills:
     runs-on: ubuntu-latest
